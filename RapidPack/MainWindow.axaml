@@ -5,10 +5,12 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="RapidPack.MainWindow"
         Title="RapidPack"
-        Background="#4F4F4F"
+        Background="White"
         Width="450"
         Height="700"
-        Padding="20">
+        Padding="20"
+        >
+        
        
         
         <StackPanel Spacing="15">
@@ -16,7 +18,7 @@
                        FontSize="24" 
                        FontWeight="Bold" 
                        HorizontalAlignment="Center" 
-                       Foreground="#f4f4f4"/>
+                       Foreground="Black"/>
             
             <TextBlock Height="2" Background="#BDC3C7"/>
 
@@ -47,7 +49,34 @@
 
             <TextBlock Height="2" Background="#BDC3C7" Margin="0,10"/>
 
+            <Button x:Name="PrzyciskWyceny" 
+                    Content="WYCEŃ" 
+                    HorizontalAlignment="Stretch" 
+                    HorizontalContentAlignment="Center"
+                    Padding="15" 
+                    Background="LightBlue" 
+                    Foreground="White" 
+                    FontSize="18" 
+                    FontWeight="Heavy"
+                    Cursor="Hand"/>
             
+            <TextBlock 
+                       Background="AliceBlue" 
+                       Padding="10" 
+                       Margin="10,0,10,0"
+                       VerticalAlignment="Center"
+            >
+                
+                <StackPanel>
+                    <TextBlock Text="Podsumowanie:" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <TextBlock x:Name="Podsumowanie" 
+                               Text="Wprowadź dane i kliknij 'Wyceń'..." 
+                               TextWrapping="Wrap" 
+                               FontSize="14" 
+                               Foreground="#34495E"/>
+                </StackPanel>
+               
+            </TextBlock>
             
         </StackPanel>
     
