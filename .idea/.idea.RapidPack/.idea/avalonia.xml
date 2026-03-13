@@ -3,6 +3,7 @@
   <component name="AvaloniaProject">
     <option name="projectPerEditor">
       <map>
+        <entry key="RapidPack/App.axaml" value="RapidPack/RapidPack.csproj" />
         <entry key="RapidPack/MainWindow.axaml" value="RapidPack/RapidPack.csproj" />
       </map>
     </option>
