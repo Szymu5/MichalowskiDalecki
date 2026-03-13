@@ -5,9 +5,24 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="RapidPack.MainWindow"
         Title="RapidPack"
-        Background="DarkOliveGreen"
+        Background="#4F4F4F"
         Width="450"
-        Height="600">
+        Height="700"
+        Padding="20">
        
+        
+        <StackPanel Spacing="15">
+            <TextBlock Text="Wycena Przesyłki" 
+                       FontSize="24" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center" 
+                       Foreground="#f4f4f4"/>
+            
+            <TextBlock Height="2" Background="#BDC3C7"/>
+
+            
+            
+        </StackPanel>
+    
     
 </Window>
