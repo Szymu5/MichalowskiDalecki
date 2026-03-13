@@ -4,6 +4,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="RapidPack.MainWindow"
-        Title="RapidPack">
-    Welcome to Avalonia!
+        Title="RapidPack"
+        Background="DarkOliveGreen"
+        Width="450"
+        Height="600">
+       
+    
 </Window>
