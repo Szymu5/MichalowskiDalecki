@@ -5,9 +5,80 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="RapidPack.MainWindow"
         Title="RapidPack"
-        Background="DarkOliveGreen"
+        Background="White"
         Width="450"
-        Height="600">
+        Height="700"
+        Padding="20"
+        >
+        
        
+        
+        <StackPanel Spacing="15">
+            <TextBlock Text="Wycena Przesyłki" 
+                       FontSize="24" 
+                       FontWeight="Bold" 
+                       HorizontalAlignment="Center" 
+                       Foreground="Black"/>
+            
+            <TextBlock Height="2" Background="#BDC3C7"/>
+
+            <TextBlock Text="Wymiary i Waga" FontWeight="SemiBold"/>
+            <Grid ColumnDefinitions="*, 2*" RowDefinitions="Auto, Auto, Auto, Auto" Margin="0,5">
+                <TextBlock Grid.Row="0" Grid.Column="0" Text="Wysokość (cm):" VerticalAlignment="Center"/>
+                <TextBox Grid.Row="0" Grid.Column="1" x:Name="HeightTextBox" Margin="0,5" Watermark="np. 40"/>
+
+                <TextBlock Grid.Row="1" Grid.Column="0" Text="Szerokość (cm):" VerticalAlignment="Center"/>
+                <TextBox Grid.Row="1" Grid.Column="1" x:Name="WidthTextBox" Margin="0,5" Watermark="np. 30"/>
+
+                <TextBlock Grid.Row="2" Grid.Column="0" Text="Głębokość (cm):" VerticalAlignment="Center"/>
+                <TextBox Grid.Row="2" Grid.Column="1" x:Name="DepthTextBox" Margin="0,5" Watermark="np. 50"/>
+
+                <TextBlock Grid.Row="3" Grid.Column="0" Text="Waga (kg):" VerticalAlignment="Center" FontWeight="Bold"/>
+                <TextBox Grid.Row="3" Grid.Column="1" x:Name="WeightTextBox" Margin="0,5" Watermark="max. 30 kg"/>
+            </Grid>
+
+            <TextBlock Text="Parametry Dodatkowe" FontWeight="SemiBold" Margin="0,10,0,0"/>
+            
+            <ComboBox x:Name="TypPrzesylki" HorizontalAlignment="Stretch" PlaceholderText="Wybierz typ przesyłki">
+                <ComboBoxItem Content="Standardowa"/>
+                <ComboBoxItem Content="Ostrożnie (szkło)"/>
+                <ComboBoxItem Content="Paleta"/>
+            </ComboBox>
+
+            <CheckBox x:Name="PrzesylkaEkspresowa" Content="Przesyłka Ekspresowa (+15 zł)" Margin="0,5"/>
+
+            <TextBlock Height="2" Background="#BDC3C7" Margin="0,10"/>
+
+            <Button x:Name="PrzyciskWyceny" 
+                    Content="WYCEŃ" 
+                    HorizontalAlignment="Stretch" 
+                    HorizontalContentAlignment="Center"
+                    Padding="15" 
+                    Background="LightBlue" 
+                    Foreground="White" 
+                    FontSize="18" 
+                    FontWeight="Heavy"
+                    Cursor="Hand"/>
+            
+            <TextBlock 
+                       Background="AliceBlue" 
+                       Padding="10" 
+                       Margin="10,0,10,0"
+                       VerticalAlignment="Center"
+            >
+                
+                <StackPanel>
+                    <TextBlock Text="Podsumowanie:" FontWeight="Bold" Margin="0,0,0,10"/>
+                    <TextBlock x:Name="Podsumowanie" 
+                               Text="Wprowadź dane i kliknij 'Wyceń'..." 
+                               TextWrapping="Wrap" 
+                               FontSize="14" 
+                               Foreground="#34495E"/>
+                </StackPanel>
+               
+            </TextBlock>
+            
+        </StackPanel>
+    
     
 </Window>
