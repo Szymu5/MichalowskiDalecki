@@ -6,7 +6,7 @@ namespace RapidPack.Tests;
 
 public class MainWindowTests
 {
-    // Test sprawdzający czy okno się odpala
+    
     [AvaloniaFact]
     public void CreateWindow_ShouldCreateANewWindow()
     {
@@ -14,7 +14,6 @@ public class MainWindowTests
         Assert.NotNull(window);
     }
 
-    // Testy logiki (wymagane przez szefa Jana)
     [Fact]
     public void Test_WagaPowyzej30_Blad()
     {
@@ -37,4 +36,3 @@ public class MainWindowTests
         Assert.Equal(15.0, logic.Calculate(0, 60, 60, 60, false, 0));
     }
 }
-//
