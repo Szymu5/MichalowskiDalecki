@@ -1,36 +1,153 @@
 {
   "version": 2,
-  "dgSpecHash": "TeAgPZQDzwA=",
-  "success": true,
-  "projectFilePath": "/home/dalecki/RiderProjects/MichalowskiDalecki/RapidPack/RapidPack.csproj",
+  "dgSpecHash": "7LqkGIK6yIQ=",
+  "success": false,
+  "projectFilePath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
   "expectedPackageFiles": [
-    "/home/dalecki/.nuget/packages/avalonia/11.3.9/avalonia.11.3.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/avalonia.angle.windows.natives/2.1.25547.20250602/avalonia.angle.windows.natives.2.1.25547.20250602.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/avalonia.buildservices/11.3.2/avalonia.buildservices.11.3.2.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/avalonia.controls.colorpicker/11.3.9/avalonia.controls.colorpicker.11.3.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/avalonia.desktop/11.3.9/avalonia.desktop.11.3.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/avalonia.diagnostics/11.3.9/avalonia.diagnostics.11.3.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/avalonia.fonts.inter/11.3.9/avalonia.fonts.inter.11.3.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/avalonia.freedesktop/11.3.9/avalonia.freedesktop.11.3.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/avalonia.native/11.3.9/avalonia.native.11.3.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/avalonia.remote.protocol/11.3.9/avalonia.remote.protocol.11.3.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/avalonia.skia/11.3.9/avalonia.skia.11.3.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/avalonia.themes.fluent/11.3.9/avalonia.themes.fluent.11.3.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/avalonia.themes.simple/11.3.9/avalonia.themes.simple.11.3.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/avalonia.win32/11.3.9/avalonia.win32.11.3.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/avalonia.x11/11.3.9/avalonia.x11.11.3.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/harfbuzzsharp/8.3.1.1/harfbuzzsharp.8.3.1.1.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/harfbuzzsharp.nativeassets.linux/8.3.1.1/harfbuzzsharp.nativeassets.linux.8.3.1.1.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/harfbuzzsharp.nativeassets.macos/8.3.1.1/harfbuzzsharp.nativeassets.macos.8.3.1.1.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/harfbuzzsharp.nativeassets.webassembly/8.3.1.1/harfbuzzsharp.nativeassets.webassembly.8.3.1.1.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/harfbuzzsharp.nativeassets.win32/8.3.1.1/harfbuzzsharp.nativeassets.win32.8.3.1.1.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/microcom.runtime/0.11.0/microcom.runtime.0.11.0.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/skiasharp/2.88.9/skiasharp.2.88.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/skiasharp.nativeassets.linux/2.88.9/skiasharp.nativeassets.linux.2.88.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/skiasharp.nativeassets.macos/2.88.9/skiasharp.nativeassets.macos.2.88.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/skiasharp.nativeassets.webassembly/2.88.9/skiasharp.nativeassets.webassembly.2.88.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/skiasharp.nativeassets.win32/2.88.9/skiasharp.nativeassets.win32.2.88.9.nupkg.sha512",
-    "/home/dalecki/.nuget/packages/tmds.dbus.protocol/0.21.2/tmds.dbus.protocol.0.21.2.nupkg.sha512"
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia\\11.3.10\\avalonia.11.3.10.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.25547.20250602\\avalonia.angle.windows.natives.2.1.25547.20250602.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia.buildservices\\11.3.2\\avalonia.buildservices.11.3.2.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia.controls.colorpicker\\11.3.10\\avalonia.controls.colorpicker.11.3.10.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia.desktop\\11.3.9\\avalonia.desktop.11.3.9.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia.diagnostics\\11.3.10\\avalonia.diagnostics.11.3.10.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia.fonts.inter\\11.3.10\\avalonia.fonts.inter.11.3.10.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia.freedesktop\\11.3.9\\avalonia.freedesktop.11.3.9.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia.native\\11.3.9\\avalonia.native.11.3.9.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia.remote.protocol\\11.3.10\\avalonia.remote.protocol.11.3.10.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia.skia\\11.3.9\\avalonia.skia.11.3.9.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia.themes.fluent\\11.3.10\\avalonia.themes.fluent.11.3.10.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia.themes.simple\\11.3.10\\avalonia.themes.simple.11.3.10.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia.win32\\11.3.9\\avalonia.win32.11.3.9.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\avalonia.x11\\11.3.9\\avalonia.x11.11.3.9.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\harfbuzzsharp\\8.3.1.1\\harfbuzzsharp.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\harfbuzzsharp.nativeassets.linux\\8.3.1.1\\harfbuzzsharp.nativeassets.linux.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\harfbuzzsharp.nativeassets.macos\\8.3.1.1\\harfbuzzsharp.nativeassets.macos.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\harfbuzzsharp.nativeassets.webassembly\\8.3.1.1\\harfbuzzsharp.nativeassets.webassembly.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\harfbuzzsharp.nativeassets.win32\\8.3.1.1\\harfbuzzsharp.nativeassets.win32.8.3.1.1.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\microcom.runtime\\0.11.0\\microcom.runtime.0.11.0.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\skiasharp\\2.88.9\\skiasharp.2.88.9.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\skiasharp.nativeassets.linux\\2.88.9\\skiasharp.nativeassets.linux.2.88.9.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\skiasharp.nativeassets.macos\\2.88.9\\skiasharp.nativeassets.macos.2.88.9.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\skiasharp.nativeassets.webassembly\\2.88.9\\skiasharp.nativeassets.webassembly.2.88.9.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\skiasharp.nativeassets.win32\\2.88.9\\skiasharp.nativeassets.win32.2.88.9.nupkg.sha512",
+    "C:\\Users\\micha\\.nuget\\packages\\tmds.dbus.protocol\\0.21.2\\tmds.dbus.protocol.0.21.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Avalonia.Themes.Fluent.11.3.9' from 'https://api.nuget.org/v3-flatcontainer/avalonia.themes.fluent/11.3.9/avalonia.themes.fluent.11.3.9.nupkg'.\r\nZa mało miejsca na dysku. : 'C:\\Users\\micha\\AppData\\Local\\Temp\\NuGetScratch\\72069aca-15b9-4b62-9623-73bd5f48831d\\2s2iynkp.4ot'.",
+      "projectPath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "filePath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Avalonia.Fonts.Inter.11.3.9' from 'https://api.nuget.org/v3-flatcontainer/avalonia.fonts.inter/11.3.9/avalonia.fonts.inter.11.3.9.nupkg'.\r\nZa mało miejsca na dysku. : 'C:\\Users\\micha\\AppData\\Local\\Temp\\NuGetScratch\\72069aca-15b9-4b62-9623-73bd5f48831d\\pce4waal.s1w'.",
+      "projectPath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "filePath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Avalonia.Diagnostics.11.3.9' from 'https://api.nuget.org/v3-flatcontainer/avalonia.diagnostics/11.3.9/avalonia.diagnostics.11.3.9.nupkg'.\r\nZa mało miejsca na dysku. : 'C:\\Users\\micha\\AppData\\Local\\Temp\\NuGetScratch\\72069aca-15b9-4b62-9623-73bd5f48831d\\eyovog2z.dc0'.",
+      "projectPath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "filePath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "Undefined",
+      "level": "Error",
+      "message": "Failed to download package 'Avalonia.11.3.9' from 'https://api.nuget.org/v3-flatcontainer/avalonia/11.3.9/avalonia.11.3.9.nupkg'.\r\nZa mało miejsca na dysku. : 'C:\\Users\\micha\\AppData\\Local\\Temp\\NuGetScratch\\72069aca-15b9-4b62-9623-73bd5f48831d\\vxqrfop3.jt1'.",
+      "projectPath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "filePath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "message": "Failed to retrieve information about 'Avalonia.Themes.Fluent' from remote source 'https://api.nuget.org/v3-flatcontainer/avalonia.themes.fluent/index.json'.",
+      "projectPath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "message": "Failed to retrieve information about 'Avalonia.Diagnostics' from remote source 'https://api.nuget.org/v3-flatcontainer/avalonia.diagnostics/index.json'.",
+      "projectPath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "message": "Failed to retrieve information about 'Avalonia.Fonts.Inter' from remote source 'https://api.nuget.org/v3-flatcontainer/avalonia.fonts.inter/index.json'.",
+      "projectPath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1801",
+      "level": "Warning",
+      "message": "Failed to retrieve information about 'Avalonia' from remote source 'https://api.nuget.org/v3-flatcontainer/avalonia/index.json'.",
+      "projectPath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "targetGraphs": []
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "RapidPack depends on Avalonia (>= 11.3.9) but Avalonia 11.3.9 was not found. Avalonia 11.3.10 was resolved instead.",
+      "projectPath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "libraryId": "Avalonia",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "RapidPack depends on Avalonia.Diagnostics (>= 11.3.9) but Avalonia.Diagnostics 11.3.9 was not found. Avalonia.Diagnostics 11.3.10 was resolved instead.",
+      "projectPath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "libraryId": "Avalonia.Diagnostics",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "RapidPack depends on Avalonia.Fonts.Inter (>= 11.3.9) but Avalonia.Fonts.Inter 11.3.9 was not found. Avalonia.Fonts.Inter 11.3.10 was resolved instead.",
+      "projectPath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "libraryId": "Avalonia.Fonts.Inter",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    },
+    {
+      "code": "NU1603",
+      "level": "Warning",
+      "message": "RapidPack depends on Avalonia.Themes.Fluent (>= 11.3.9) but Avalonia.Themes.Fluent 11.3.9 was not found. Avalonia.Themes.Fluent 11.3.10 was resolved instead.",
+      "projectPath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "warningLevel": 1,
+      "filePath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+      "libraryId": "Avalonia.Themes.Fluent",
+      "targetGraphs": [
+        "net10.0"
+      ]
+    }
+  ]
 }

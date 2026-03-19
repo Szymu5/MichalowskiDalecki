@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/home/dalecki/RiderProjects/MichalowskiDalecki/RapidPack/RapidPack.csproj": {}
+    "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj": {}
   },
   "projects": {
-    "/home/dalecki/RiderProjects/MichalowskiDalecki/RapidPack/RapidPack.csproj": {
+    "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/dalecki/RiderProjects/MichalowskiDalecki/RapidPack/RapidPack.csproj",
+        "projectUniqueName": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
         "projectName": "RapidPack",
-        "projectPath": "/home/dalecki/RiderProjects/MichalowskiDalecki/RapidPack/RapidPack.csproj",
-        "packagesPath": "/home/dalecki/.nuget/packages/",
-        "outputPath": "/home/dalecki/RiderProjects/MichalowskiDalecki/RapidPack/obj/",
+        "projectPath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\RapidPack.csproj",
+        "packagesPath": "C:\\Users\\micha\\.nuget\\packages\\",
+        "outputPath": "D:\\Do uploadu\\Shared Clips\\RapidPack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/dalecki/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\micha\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "/usr/lib/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -39,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.100"
+        "SdkAnalysisLevel": "10.0.200"
       },
       "frameworks": {
         "net10.0": {
@@ -82,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/10.0.104/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",
