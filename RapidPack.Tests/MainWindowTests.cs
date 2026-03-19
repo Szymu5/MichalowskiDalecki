@@ -37,3 +37,4 @@ public class MainWindowTests
         Assert.Equal(15.0, logic.Calculate(0, 60, 60, 60, false, 0));
     }
 }
+//
