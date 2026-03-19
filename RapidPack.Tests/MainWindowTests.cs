@@ -28,6 +28,7 @@ public class MainWindowTests
         Assert.Equal(100.0, logic.Calculate(10, 200, 200, 200, false, 2));
     }
 //GutekPracował na moim komputerze i komity wyświetlają sie jako jego zaraz to naprawie
+
     [Fact]
     public void Test_Gabaryt_Dolicza50Procent()
     {
