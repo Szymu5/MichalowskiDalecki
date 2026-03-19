@@ -2,16 +2,20 @@
   "version": 3,
   "targets": {
     "net10.0": {
-      "Avalonia/11.3.10": {
+      "Avalonia/11.3.12": {
         "type": "package",
         "dependencies": {
           "Avalonia.BuildServices": "11.3.2",
-          "Avalonia.Remote.Protocol": "11.3.10",
+          "Avalonia.Remote.Protocol": "11.3.12",
           "MicroCom.Runtime": "0.11.0"
         },
         "compile": {
-          "ref/net8.0/Avalonia.Base.dll": {},
-          "ref/net8.0/Avalonia.Controls.dll": {},
+          "ref/net8.0/Avalonia.Base.dll": {
+            "related": ".xml"
+          },
+          "ref/net8.0/Avalonia.Controls.dll": {
+            "related": ".xml"
+          },
           "ref/net8.0/Avalonia.DesignerSupport.dll": {
             "related": ".xml"
           },
@@ -37,7 +41,7 @@
             "related": ".xml"
           },
           "ref/net8.0/Avalonia.dll": {
-            "related": ".DesignerSupport.xml;.Dialogs.xml;.Markup.Xaml.xml;.Markup.xml;.Metal.xml;.MicroCom.xml;.OpenGL.xml;.Vulkan.xml;.xml"
+            "related": ".Base.xml;.Controls.xml;.DesignerSupport.xml;.Dialogs.xml;.Markup.Xaml.xml;.Markup.xml;.Metal.xml;.MicroCom.xml;.OpenGL.xml;.Vulkan.xml;.xml"
           }
         },
         "runtime": {
@@ -103,11 +107,11 @@
           "buildTransitive/Avalonia.BuildServices.targets": {}
         }
       },
-      "Avalonia.Controls.ColorPicker/11.3.10": {
+      "Avalonia.Controls.ColorPicker/11.3.9": {
         "type": "package",
         "dependencies": {
-          "Avalonia": "11.3.10",
-          "Avalonia.Remote.Protocol": "11.3.10"
+          "Avalonia": "11.3.9",
+          "Avalonia.Remote.Protocol": "11.3.9"
         },
         "compile": {
           "lib/net8.0/Avalonia.Controls.ColorPicker.dll": {
@@ -140,24 +144,28 @@
           }
         }
       },
-      "Avalonia.Diagnostics/11.3.10": {
+      "Avalonia.Diagnostics/11.3.9": {
         "type": "package",
         "dependencies": {
-          "Avalonia": "11.3.10",
-          "Avalonia.Controls.ColorPicker": "11.3.10",
-          "Avalonia.Themes.Simple": "11.3.10"
+          "Avalonia": "11.3.9",
+          "Avalonia.Controls.ColorPicker": "11.3.9",
+          "Avalonia.Themes.Simple": "11.3.9"
         },
         "compile": {
-          "lib/net8.0/Avalonia.Diagnostics.dll": {}
+          "lib/net8.0/Avalonia.Diagnostics.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0/Avalonia.Diagnostics.dll": {}
+          "lib/net8.0/Avalonia.Diagnostics.dll": {
+            "related": ".xml"
+          }
         }
       },
-      "Avalonia.Fonts.Inter/11.3.10": {
+      "Avalonia.Fonts.Inter/11.3.9": {
         "type": "package",
         "dependencies": {
-          "Avalonia": "11.3.10"
+          "Avalonia": "11.3.9"
         },
         "compile": {
           "lib/net8.0/Avalonia.Fonts.Inter.dll": {
@@ -183,6 +191,22 @@
         },
         "runtime": {
           "lib/net8.0/Avalonia.FreeDesktop.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Avalonia.Headless/11.3.12": {
+        "type": "package",
+        "dependencies": {
+          "Avalonia": "11.3.12"
+        },
+        "compile": {
+          "lib/net8.0/Avalonia.Headless.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Avalonia.Headless.dll": {
             "related": ".xml"
           }
         }
@@ -226,13 +250,17 @@
           }
         }
       },
-      "Avalonia.Remote.Protocol/11.3.10": {
+      "Avalonia.Remote.Protocol/11.3.12": {
         "type": "package",
         "compile": {
-          "lib/net8.0/Avalonia.Remote.Protocol.dll": {}
+          "lib/net8.0/Avalonia.Remote.Protocol.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net8.0/Avalonia.Remote.Protocol.dll": {}
+          "lib/net8.0/Avalonia.Remote.Protocol.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Avalonia.Skia/11.3.9": {
@@ -257,10 +285,10 @@
           }
         }
       },
-      "Avalonia.Themes.Fluent/11.3.10": {
+      "Avalonia.Themes.Fluent/11.3.9": {
         "type": "package",
         "dependencies": {
-          "Avalonia": "11.3.10"
+          "Avalonia": "11.3.9"
         },
         "compile": {
           "lib/net8.0/Avalonia.Themes.Fluent.dll": {
@@ -273,10 +301,10 @@
           }
         }
       },
-      "Avalonia.Themes.Simple/11.3.10": {
+      "Avalonia.Themes.Simple/11.3.9": {
         "type": "package",
         "dependencies": {
-          "Avalonia": "11.3.10"
+          "Avalonia": "11.3.9"
         },
         "compile": {
           "lib/net8.0/Avalonia.Themes.Simple.dll": {
@@ -328,6 +356,12 @@
           "lib/net8.0/Avalonia.X11.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "coverlet.collector/6.0.4": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/coverlet.collector.targets": {}
         }
       },
       "HarfBuzzSharp/8.3.1.1": {
@@ -867,6 +901,19 @@
           "xunit.core": "[2.9.3]"
         }
       },
+      "xunit.abstractions/2.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/xunit.abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/xunit.abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "xunit.analyzers/1.18.0": {
         "type": "package"
       },
@@ -881,6 +928,65 @@
           "lib/net6.0/xunit.assert.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "xunit.core/2.9.3": {
+        "type": "package",
+        "dependencies": {
+          "xunit.extensibility.core": "[2.9.3]",
+          "xunit.extensibility.execution": "[2.9.3]"
+        },
+        "build": {
+          "build/xunit.core.props": {},
+          "build/xunit.core.targets": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/xunit.core.props": {},
+          "buildMultiTargeting/xunit.core.targets": {}
+        }
+      },
+      "xunit.extensibility.core/2.9.3": {
+        "type": "package",
+        "dependencies": {
+          "xunit.abstractions": "2.0.3"
+        },
+        "compile": {
+          "lib/netstandard1.1/xunit.core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "xunit.extensibility.execution/2.9.3": {
+        "type": "package",
+        "dependencies": {
+          "xunit.extensibility.core": "[2.9.3]"
+        },
+        "compile": {
+          "lib/netstandard1.1/xunit.execution.dotnet.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard1.1/xunit.execution.dotnet.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "xunit.runner.visualstudio/3.1.4": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/_._": {}
+        },
+        "runtime": {
+          "lib/net8.0/_._": {}
+        },
+        "build": {
+          "build/net8.0/xunit.runner.visualstudio.props": {}
         }
       },
       "RapidPack/1.0.0": {
@@ -903,10 +1009,10 @@
     }
   },
   "libraries": {
-    "Avalonia/11.3.10": {
-      "sha512": "fAZmy1oOzQzBlg0Mm8QawA2439LmXHmX7hHEucfvGmAfibCUtQ0wgedl4b3XRd4Y8pH50kAlsg5DPG7ARtGa2A==",
+    "Avalonia/11.3.12": {
+      "sha512": "CHB0gXMSba8gTXqTrO9lS1te9ejH52ngHPm+0i/RfXFzqHXHPQ3yciFc/GfGnXUBjqjwH85J1rhYNl4/EujP0w==",
       "type": "package",
-      "path": "avalonia/11.3.10",
+      "path": "avalonia/11.3.12",
       "hasTools": true,
       "files": [
         ".nupkg.metadata",
@@ -914,7 +1020,7 @@
         "Icon.png",
         "analyzers/dotnet/cs/Avalonia.Analyzers.dll",
         "analyzers/dotnet/cs/Avalonia.Generators.dll",
-        "avalonia.11.3.10.nupkg.sha512",
+        "avalonia.11.3.12.nupkg.sha512",
         "avalonia.nuspec",
         "build/Avalonia.Generators.props",
         "build/Avalonia.props",
@@ -938,6 +1044,7 @@
         "lib/net6.0/Avalonia.Base.dll",
         "lib/net6.0/Avalonia.Base.xml",
         "lib/net6.0/Avalonia.Controls.dll",
+        "lib/net6.0/Avalonia.Controls.xml",
         "lib/net6.0/Avalonia.DesignerSupport.dll",
         "lib/net6.0/Avalonia.DesignerSupport.xml",
         "lib/net6.0/Avalonia.Dialogs.dll",
@@ -979,7 +1086,9 @@
         "lib/net8.0/Avalonia.dll",
         "lib/net8.0/Avalonia.xml",
         "lib/netstandard2.0/Avalonia.Base.dll",
+        "lib/netstandard2.0/Avalonia.Base.xml",
         "lib/netstandard2.0/Avalonia.Controls.dll",
+        "lib/netstandard2.0/Avalonia.Controls.xml",
         "lib/netstandard2.0/Avalonia.DesignerSupport.dll",
         "lib/netstandard2.0/Avalonia.DesignerSupport.xml",
         "lib/netstandard2.0/Avalonia.Dialogs.dll",
@@ -999,7 +1108,9 @@
         "lib/netstandard2.0/Avalonia.dll",
         "lib/netstandard2.0/Avalonia.xml",
         "ref/net6.0/Avalonia.Base.dll",
+        "ref/net6.0/Avalonia.Base.xml",
         "ref/net6.0/Avalonia.Controls.dll",
+        "ref/net6.0/Avalonia.Controls.xml",
         "ref/net6.0/Avalonia.DesignerSupport.dll",
         "ref/net6.0/Avalonia.DesignerSupport.xml",
         "ref/net6.0/Avalonia.Dialogs.dll",
@@ -1019,7 +1130,9 @@
         "ref/net6.0/Avalonia.dll",
         "ref/net6.0/Avalonia.xml",
         "ref/net8.0/Avalonia.Base.dll",
+        "ref/net8.0/Avalonia.Base.xml",
         "ref/net8.0/Avalonia.Controls.dll",
+        "ref/net8.0/Avalonia.Controls.xml",
         "ref/net8.0/Avalonia.DesignerSupport.dll",
         "ref/net8.0/Avalonia.DesignerSupport.xml",
         "ref/net8.0/Avalonia.Dialogs.dll",
@@ -1041,6 +1154,7 @@
         "ref/netstandard2.0/Avalonia.Base.dll",
         "ref/netstandard2.0/Avalonia.Base.xml",
         "ref/netstandard2.0/Avalonia.Controls.dll",
+        "ref/netstandard2.0/Avalonia.Controls.xml",
         "ref/netstandard2.0/Avalonia.DesignerSupport.dll",
         "ref/netstandard2.0/Avalonia.DesignerSupport.xml",
         "ref/netstandard2.0/Avalonia.Dialogs.dll",
@@ -1099,17 +1213,18 @@
         "tools/netstandard2.0/runtimeconfig.json"
       ]
     },
-    "Avalonia.Controls.ColorPicker/11.3.10": {
-      "sha512": "KRlU3aPinqxcgP2471m73qi+qj+XZ24/d/vPwnpmA0Jy977h8iWDzDafnv4PCv8RTvnyt3duVmGTdxJHMmvoow==",
+    "Avalonia.Controls.ColorPicker/11.3.9": {
+      "sha512": "AVn/h8R/jhlHLIImECZnCTpcrcRo319J7y2gJ/YU4ELMaCsRTmWY3dxlRyBDbyCukURTupGmsPy6gb7XEYbWow==",
       "type": "package",
-      "path": "avalonia.controls.colorpicker/11.3.10",
+      "path": "avalonia.controls.colorpicker/11.3.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "avalonia.controls.colorpicker.11.3.10.nupkg.sha512",
+        "avalonia.controls.colorpicker.11.3.9.nupkg.sha512",
         "avalonia.controls.colorpicker.nuspec",
         "lib/net6.0/Avalonia.Controls.ColorPicker.dll",
+        "lib/net6.0/Avalonia.Controls.ColorPicker.xml",
         "lib/net8.0/Avalonia.Controls.ColorPicker.dll",
         "lib/net8.0/Avalonia.Controls.ColorPicker.xml",
         "lib/netstandard2.0/Avalonia.Controls.ColorPicker.dll",
@@ -1134,31 +1249,33 @@
         "lib/netstandard2.0/Avalonia.Desktop.xml"
       ]
     },
-    "Avalonia.Diagnostics/11.3.10": {
-      "sha512": "8YbX1fdpsJeZfgBrjQy9KFPkJULwoVe1/oOspgKx3WNW7K52V8uYxvMNvd12AUn1BulVcsglSMzsDHtX50gicg==",
+    "Avalonia.Diagnostics/11.3.9": {
+      "sha512": "d2XGagyYZvFGv6adGrEzCNyoF+6Pfl+YU9zfUE4XyYBMw1zQcv2TBL6nRduZnqlCovf+zJZnNHA8cqpvwWJp7Q==",
       "type": "package",
-      "path": "avalonia.diagnostics/11.3.10",
+      "path": "avalonia.diagnostics/11.3.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "avalonia.diagnostics.11.3.10.nupkg.sha512",
+        "avalonia.diagnostics.11.3.9.nupkg.sha512",
         "avalonia.diagnostics.nuspec",
         "lib/net6.0/Avalonia.Diagnostics.dll",
         "lib/net6.0/Avalonia.Diagnostics.xml",
         "lib/net8.0/Avalonia.Diagnostics.dll",
-        "lib/netstandard2.0/Avalonia.Diagnostics.dll"
+        "lib/net8.0/Avalonia.Diagnostics.xml",
+        "lib/netstandard2.0/Avalonia.Diagnostics.dll",
+        "lib/netstandard2.0/Avalonia.Diagnostics.xml"
       ]
     },
-    "Avalonia.Fonts.Inter/11.3.10": {
-      "sha512": "k55hTUepo0++6k5pogZGeGfnaqgrJKQbur1R6G2KEfcuVEI8VEeHIrPVm14ItFoB68xH+E9LnRjs7bvhlXNcvg==",
+    "Avalonia.Fonts.Inter/11.3.9": {
+      "sha512": "g5qaObmtQUNqtuONcoYv6wrN3fNZ3ATyBohOtFAEyopwwFNQPcQaA+JSgW+AFmdBXaBOuvxthD8P4qglagNUvw==",
       "type": "package",
-      "path": "avalonia.fonts.inter/11.3.10",
+      "path": "avalonia.fonts.inter/11.3.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "avalonia.fonts.inter.11.3.10.nupkg.sha512",
+        "avalonia.fonts.inter.11.3.9.nupkg.sha512",
         "avalonia.fonts.inter.nuspec",
         "lib/net6.0/Avalonia.Fonts.Inter.dll",
         "lib/net6.0/Avalonia.Fonts.Inter.xml",
@@ -1184,6 +1301,24 @@
         "lib/net8.0/Avalonia.FreeDesktop.xml",
         "lib/netstandard2.0/Avalonia.FreeDesktop.dll",
         "lib/netstandard2.0/Avalonia.FreeDesktop.xml"
+      ]
+    },
+    "Avalonia.Headless/11.3.12": {
+      "sha512": "TfeApC6x10xaihh/v10VPZbwIIJx/bPwS+yXIimXo3IlmydaJjSkolKlIYUvffeVfPCzNZobZLT3iYnb8mpi6Q==",
+      "type": "package",
+      "path": "avalonia.headless/11.3.12",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "avalonia.headless.11.3.12.nupkg.sha512",
+        "avalonia.headless.nuspec",
+        "lib/net6.0/Avalonia.Headless.dll",
+        "lib/net6.0/Avalonia.Headless.xml",
+        "lib/net8.0/Avalonia.Headless.dll",
+        "lib/net8.0/Avalonia.Headless.xml",
+        "lib/netstandard2.0/Avalonia.Headless.dll",
+        "lib/netstandard2.0/Avalonia.Headless.xml"
       ]
     },
     "Avalonia.Headless.XUnit/11.3.12": {
@@ -1225,20 +1360,22 @@
         "runtimes/osx/native/libAvaloniaNative.dylib"
       ]
     },
-    "Avalonia.Remote.Protocol/11.3.10": {
-      "sha512": "DyNUbh9IfH+AL3KKob8p4IPZk7BvDMIB3ub13gJTrICfaMQiU7QsE0U05rfNFKJEdMmK0MBTL/Y+8BnaLVrDPw==",
+    "Avalonia.Remote.Protocol/11.3.12": {
+      "sha512": "zaWTPaBKxGfHxqQfPh1WP+vWy3iVAwYWW/7FGlz63/wT1b+3b7Wn37H6c9C2E/M3cgllrW5/cirye516QUDZiA==",
       "type": "package",
-      "path": "avalonia.remote.protocol/11.3.10",
+      "path": "avalonia.remote.protocol/11.3.12",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "avalonia.remote.protocol.11.3.10.nupkg.sha512",
+        "avalonia.remote.protocol.11.3.12.nupkg.sha512",
         "avalonia.remote.protocol.nuspec",
         "lib/net6.0/Avalonia.Remote.Protocol.dll",
         "lib/net6.0/Avalonia.Remote.Protocol.xml",
         "lib/net8.0/Avalonia.Remote.Protocol.dll",
-        "lib/netstandard2.0/Avalonia.Remote.Protocol.dll"
+        "lib/net8.0/Avalonia.Remote.Protocol.xml",
+        "lib/netstandard2.0/Avalonia.Remote.Protocol.dll",
+        "lib/netstandard2.0/Avalonia.Remote.Protocol.xml"
       ]
     },
     "Avalonia.Skia/11.3.9": {
@@ -1259,15 +1396,15 @@
         "lib/netstandard2.0/Avalonia.Skia.xml"
       ]
     },
-    "Avalonia.Themes.Fluent/11.3.10": {
-      "sha512": "K5QkJZYKbKUqLY9FbtSfihzO7n35cDcisQY9ohTfKBe/GQpmEqhy6BdazBDu8Iq/o7DfLUaNINbqCysvouiJIw==",
+    "Avalonia.Themes.Fluent/11.3.9": {
+      "sha512": "XSgQxSRKgK/yNhkKa1rGuEUDISi+VNxwoj1pq4JUhFd1XXk/dqGsc4MfESItwTyGEYJH+HDbWfWEPVDDxAfUJg==",
       "type": "package",
-      "path": "avalonia.themes.fluent/11.3.10",
+      "path": "avalonia.themes.fluent/11.3.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "avalonia.themes.fluent.11.3.10.nupkg.sha512",
+        "avalonia.themes.fluent.11.3.9.nupkg.sha512",
         "avalonia.themes.fluent.nuspec",
         "lib/net6.0/Avalonia.Themes.Fluent.dll",
         "lib/net6.0/Avalonia.Themes.Fluent.xml",
@@ -1277,15 +1414,15 @@
         "lib/netstandard2.0/Avalonia.Themes.Fluent.xml"
       ]
     },
-    "Avalonia.Themes.Simple/11.3.10": {
-      "sha512": "SwmIVuKZEiVW7lyflK9WWFo1Aw4BA5UJJviLoAwvw0x3HtnT5LDtlEzzkV7qiWxijaatMCP/xQH5k1NJnPSC+w==",
+    "Avalonia.Themes.Simple/11.3.9": {
+      "sha512": "BicF6GQJJs6sI5+GcuTujnUdMijVyBpD3QD9O9ZpqkSSDE3vyZFbRZb5MyCBlPu/LxPANnKoTW95erlpYIICTw==",
       "type": "package",
-      "path": "avalonia.themes.simple/11.3.10",
+      "path": "avalonia.themes.simple/11.3.9",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
-        "avalonia.themes.simple.11.3.10.nupkg.sha512",
+        "avalonia.themes.simple.11.3.9.nupkg.sha512",
         "avalonia.themes.simple.nuspec",
         "lib/net6.0/Avalonia.Themes.Simple.dll",
         "lib/net6.0/Avalonia.Themes.Simple.xml",
@@ -1335,6 +1472,76 @@
         "lib/net8.0/Avalonia.X11.xml",
         "lib/netstandard2.0/Avalonia.X11.dll",
         "lib/netstandard2.0/Avalonia.X11.xml"
+      ]
+    },
+    "coverlet.collector/6.0.4": {
+      "sha512": "lkhqpF8Pu2Y7IiN7OntbsTtdbpR1syMsm2F3IgX6ootA4ffRqWL5jF7XipHuZQTdVuWG/gVAAcf8mjk8Tz0xPg==",
+      "type": "package",
+      "path": "coverlet.collector/6.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "VSTestIntegration.md",
+        "build/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll",
+        "build/netstandard2.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll",
+        "build/netstandard2.0/Microsoft.Extensions.DependencyInjection.dll",
+        "build/netstandard2.0/Microsoft.Extensions.DependencyModel.dll",
+        "build/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "build/netstandard2.0/Microsoft.TestPlatform.CoreUtilities.dll",
+        "build/netstandard2.0/Microsoft.TestPlatform.PlatformAbstractions.dll",
+        "build/netstandard2.0/Microsoft.VisualStudio.TestPlatform.ObjectModel.dll",
+        "build/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard2.0/Mono.Cecil.dll",
+        "build/netstandard2.0/Newtonsoft.Json.dll",
+        "build/netstandard2.0/NuGet.Frameworks.dll",
+        "build/netstandard2.0/NuGet.Versioning.dll",
+        "build/netstandard2.0/System.Buffers.dll",
+        "build/netstandard2.0/System.Collections.Immutable.dll",
+        "build/netstandard2.0/System.Memory.dll",
+        "build/netstandard2.0/System.Numerics.Vectors.dll",
+        "build/netstandard2.0/System.Reflection.Metadata.dll",
+        "build/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "build/netstandard2.0/System.Text.Encodings.Web.dll",
+        "build/netstandard2.0/System.Text.Json.dll",
+        "build/netstandard2.0/System.Threading.Tasks.Extensions.dll",
+        "build/netstandard2.0/coverlet.collector.deps.json",
+        "build/netstandard2.0/coverlet.collector.dll",
+        "build/netstandard2.0/coverlet.collector.pdb",
+        "build/netstandard2.0/coverlet.collector.targets",
+        "build/netstandard2.0/coverlet.core.dll",
+        "build/netstandard2.0/coverlet.core.pdb",
+        "build/netstandard2.0/coverlet.core.xml",
+        "build/netstandard2.0/cs/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "build/netstandard2.0/cs/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "build/netstandard2.0/de/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "build/netstandard2.0/de/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "build/netstandard2.0/es/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "build/netstandard2.0/es/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "build/netstandard2.0/fr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "build/netstandard2.0/fr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "build/netstandard2.0/it/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "build/netstandard2.0/it/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "build/netstandard2.0/ja/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "build/netstandard2.0/ja/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "build/netstandard2.0/ko/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "build/netstandard2.0/ko/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "build/netstandard2.0/pl/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "build/netstandard2.0/pl/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "build/netstandard2.0/pt-BR/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "build/netstandard2.0/pt-BR/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "build/netstandard2.0/ru/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "build/netstandard2.0/ru/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "build/netstandard2.0/tr/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "build/netstandard2.0/tr/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "build/netstandard2.0/zh-Hans/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "build/netstandard2.0/zh-Hans/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "build/netstandard2.0/zh-Hant/Microsoft.TestPlatform.CoreUtilities.resources.dll",
+        "build/netstandard2.0/zh-Hant/Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll",
+        "coverlet-icon.png",
+        "coverlet.collector.6.0.4.nupkg.sha512",
+        "coverlet.collector.nuspec"
       ]
     },
     "HarfBuzzSharp/8.3.1.1": {
@@ -2011,6 +2218,23 @@
         "xunit.nuspec"
       ]
     },
+    "xunit.abstractions/2.0.3": {
+      "sha512": "pot1I4YOxlWjIb5jmwvvQNbTrZ3lJQ+jUGkGjWE3hEFM0l5gOnBWS+H3qsex68s5cO52g+44vpGzhAt+42vwKg==",
+      "type": "package",
+      "path": "xunit.abstractions/2.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/xunit.abstractions.dll",
+        "lib/net35/xunit.abstractions.xml",
+        "lib/netstandard1.0/xunit.abstractions.dll",
+        "lib/netstandard1.0/xunit.abstractions.xml",
+        "lib/netstandard2.0/xunit.abstractions.dll",
+        "lib/netstandard2.0/xunit.abstractions.xml",
+        "xunit.abstractions.2.0.3.nupkg.sha512",
+        "xunit.abstractions.nuspec"
+      ]
+    },
     "xunit.analyzers/1.18.0": {
       "sha512": "OtFMHN8yqIcYP9wcVIgJrq01AfTxijjAqVDy/WeQVSyrDC1RzBWeQPztL49DN2syXRah8TYnfvk035s7L95EZQ==",
       "type": "package",
@@ -2044,6 +2268,81 @@
         "lib/netstandard1.1/xunit.assert.xml",
         "xunit.assert.2.9.3.nupkg.sha512",
         "xunit.assert.nuspec"
+      ]
+    },
+    "xunit.core/2.9.3": {
+      "sha512": "BiAEvqGvyme19wE0wTKdADH+NloYqikiU0mcnmiNyXaF9HyHmE6sr/3DC5vnBkgsWaE6yPyWszKSPSApWdRVeQ==",
+      "type": "package",
+      "path": "xunit.core/2.9.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "_content/README.md",
+        "_content/logo-128-transparent.png",
+        "build/xunit.core.props",
+        "build/xunit.core.targets",
+        "buildMultiTargeting/xunit.core.props",
+        "buildMultiTargeting/xunit.core.targets",
+        "xunit.core.2.9.3.nupkg.sha512",
+        "xunit.core.nuspec"
+      ]
+    },
+    "xunit.extensibility.core/2.9.3": {
+      "sha512": "kf3si0YTn2a8J8eZNb+zFpwfoyvIrQ7ivNk5ZYA5yuYk1bEtMe4DxJ2CF/qsRgmEnDr7MnW1mxylBaHTZ4qErA==",
+      "type": "package",
+      "path": "xunit.extensibility.core/2.9.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "_content/README.md",
+        "_content/logo-128-transparent.png",
+        "lib/net452/xunit.core.dll",
+        "lib/net452/xunit.core.dll.tdnet",
+        "lib/net452/xunit.core.xml",
+        "lib/net452/xunit.runner.tdnet.dll",
+        "lib/net452/xunit.runner.utility.net452.dll",
+        "lib/netstandard1.1/xunit.core.dll",
+        "lib/netstandard1.1/xunit.core.xml",
+        "xunit.extensibility.core.2.9.3.nupkg.sha512",
+        "xunit.extensibility.core.nuspec"
+      ]
+    },
+    "xunit.extensibility.execution/2.9.3": {
+      "sha512": "yMb6vMESlSrE3Wfj7V6cjQ3S4TXdXpRqYeNEI3zsX31uTsGMJjEw6oD5F5u1cHnMptjhEECnmZSsPxB6ChZHDQ==",
+      "type": "package",
+      "path": "xunit.extensibility.execution/2.9.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "_content/README.md",
+        "_content/logo-128-transparent.png",
+        "lib/net452/xunit.execution.desktop.dll",
+        "lib/net452/xunit.execution.desktop.xml",
+        "lib/netstandard1.1/xunit.execution.dotnet.dll",
+        "lib/netstandard1.1/xunit.execution.dotnet.xml",
+        "xunit.extensibility.execution.2.9.3.nupkg.sha512",
+        "xunit.extensibility.execution.nuspec"
+      ]
+    },
+    "xunit.runner.visualstudio/3.1.4": {
+      "sha512": "5mj99LvCqrq3CNi06xYdyIAXOEh+5b33F2nErCzI5zWiDdLHXiPXEWFSUAF8zlIv0ZWqjZNCwHTQeAPYbF3pCg==",
+      "type": "package",
+      "path": "xunit.runner.visualstudio/3.1.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "_content/README.md",
+        "_content/logo-128-transparent.png",
+        "build/net472/xunit.abstractions.dll",
+        "build/net472/xunit.runner.visualstudio.props",
+        "build/net472/xunit.runner.visualstudio.testadapter.dll",
+        "build/net8.0/xunit.abstractions.dll",
+        "build/net8.0/xunit.runner.visualstudio.props",
+        "build/net8.0/xunit.runner.visualstudio.testadapter.dll",
+        "lib/net472/_._",
+        "lib/net8.0/_._",
+        "xunit.runner.visualstudio.3.1.4.nupkg.sha512",
+        "xunit.runner.visualstudio.nuspec"
       ]
     },
     "RapidPack/1.0.0": {
@@ -2423,171 +2722,5 @@
         }
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Error",
-      "message": "Failed to download package 'coverlet.collector.6.0.4' from 'https://api.nuget.org/v3-flatcontainer/coverlet.collector/6.0.4/coverlet.collector.6.0.4.nupkg'.\r\nZa mało miejsca na dysku. : 'C:\\Users\\micha\\AppData\\Local\\Temp\\NuGetScratch\\72069aca-15b9-4b62-9623-73bd5f48831d\\0a4pdtqe.5gw'."
-    },
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Failed to retrieve information about 'xunit.core' from remote source 'https://api.nuget.org/v3-flatcontainer/xunit.core/index.json'."
-    },
-    {
-      "code": "Undefined",
-      "level": "Error",
-      "message": "Failed to download package 'xunit.runner.visualstudio.3.1.4' from 'https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/3.1.4/xunit.runner.visualstudio.3.1.4.nupkg'.\r\nZa mało miejsca na dysku. : 'C:\\Users\\micha\\AppData\\Local\\Temp\\NuGetScratch\\72069aca-15b9-4b62-9623-73bd5f48831d\\b2f1svl5.fbg'."
-    },
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Failed to retrieve information about 'Avalonia.Headless' from remote source 'https://api.nuget.org/v3-flatcontainer/avalonia.headless/index.json'."
-    },
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Failed to retrieve information about 'coverlet.collector' from remote source 'https://api.nuget.org/v3-flatcontainer/coverlet.collector/index.json'."
-    },
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Failed to retrieve information about 'xunit.core' from remote source 'https://api.nuget.org/v3-flatcontainer/xunit.core/index.json'."
-    },
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Failed to retrieve information about 'xunit.runner.visualstudio' from remote source 'https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/index.json'."
-    },
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Failed to retrieve information about 'Avalonia' from remote source 'https://api.nuget.org/v3-flatcontainer/avalonia/index.json'."
-    },
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Failed to retrieve information about 'Avalonia.Themes.Fluent' from remote source 'https://api.nuget.org/v3-flatcontainer/avalonia.themes.fluent/index.json'."
-    },
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Failed to retrieve information about 'Avalonia.Fonts.Inter' from remote source 'https://api.nuget.org/v3-flatcontainer/avalonia.fonts.inter/index.json'."
-    },
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Failed to retrieve information about 'Avalonia.Diagnostics' from remote source 'https://api.nuget.org/v3-flatcontainer/avalonia.diagnostics/index.json'."
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "RapidPack depends on Avalonia (>= 11.3.9) but Avalonia 11.3.9 was not found. Avalonia 11.3.10 was resolved instead.",
-      "libraryId": "Avalonia",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "RapidPack depends on Avalonia.Diagnostics (>= 11.3.9) but Avalonia.Diagnostics 11.3.9 was not found. Avalonia.Diagnostics 11.3.10 was resolved instead.",
-      "libraryId": "Avalonia.Diagnostics",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "RapidPack depends on Avalonia.Fonts.Inter (>= 11.3.9) but Avalonia.Fonts.Inter 11.3.9 was not found. Avalonia.Fonts.Inter 11.3.10 was resolved instead.",
-      "libraryId": "Avalonia.Fonts.Inter",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1603",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "RapidPack depends on Avalonia.Themes.Fluent (>= 11.3.9) but Avalonia.Themes.Fluent 11.3.9 was not found. Avalonia.Themes.Fluent 11.3.10 was resolved instead.",
-      "libraryId": "Avalonia.Themes.Fluent",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Failed to retrieve information about 'coverlet.collector' from remote source 'https://api.nuget.org/v3-flatcontainer/coverlet.collector/index.json'."
-    },
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Failed to retrieve information about 'xunit.runner.visualstudio' from remote source 'https://api.nuget.org/v3-flatcontainer/xunit.runner.visualstudio/index.json'."
-    },
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Failed to retrieve information about 'xunit.core' from remote source 'https://api.nuget.org/v3-flatcontainer/xunit.core/index.json'."
-    },
-    {
-      "code": "NU1801",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Failed to retrieve information about 'Avalonia.Headless' from remote source 'https://api.nuget.org/v3-flatcontainer/avalonia.headless/index.json'."
-    },
-    {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "Unable to find package coverlet.collector. No packages exist with this id in source(s): nuget.org",
-      "libraryId": "coverlet.collector",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "Unable to find package xunit.runner.visualstudio. No packages exist with this id in source(s): nuget.org",
-      "libraryId": "xunit.runner.visualstudio",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "Unable to find package xunit.core. No packages exist with this id in source(s): nuget.org",
-      "libraryId": "xunit.core",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    },
-    {
-      "code": "NU1101",
-      "level": "Error",
-      "message": "Unable to find package Avalonia.Headless. No packages exist with this id in source(s): nuget.org",
-      "libraryId": "Avalonia.Headless",
-      "targetGraphs": [
-        "net10.0"
-      ]
-    }
-  ]
+  }
 }
