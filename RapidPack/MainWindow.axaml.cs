@@ -9,7 +9,7 @@ public partial class MainWindow : Window
     public MainWindow()
     {
         InitializeComponent();
-        // Łączymy przycisk z kodem
+        
         PrzyciskWyceny.Click += OnCalculateClick;
     }
 
@@ -37,7 +37,7 @@ public partial class MainWindow : Window
     }
 }
 
-// Ta klasa pozwala na testy jednostkowe bez otwierania okna
+
 public class ParcelLogic
 {
     public double Calculate(double waga, double wys, double szer, double gleb, bool ekspres, int typIndex)
